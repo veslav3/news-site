@@ -1,0 +1,26 @@
+{
+  "resourceName": "news",
+  "tableName": "news",
+  "partitionKey": {
+    "fieldName": "date",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "title",
+    "fieldType": "string"
+  },
+  "gsi": [
+    {
+      "name": "news",
+      "partitionKey": {
+        "fieldName": "title",
+        "fieldType": "string"
+      },
+      "sortKey": {
+        "fieldName": "date",
+        "fieldType": "string"
+      }
+    }
+  ],
+  "triggerFunctions": []
+}

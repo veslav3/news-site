@@ -1,0 +1,26 @@
+<h1>Create new news item:</h1>
+
+<div class="form-body">
+  <form
+    autocomplete="off"
+    [formGroup]="createForm"
+    (submit)="onCreate(createForm.value)"
+  >
+    <div>
+      <label>Title: </label>
+      <input type="text" formControlName="title" autocomplete="off" />
+    </div>
+    <div>
+      <label>Description: </label>
+      <input type="text" formControlName="description" autocomplete="off" />
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<h1>Current news</h1>
+<div *ngFor="let newsItem of newsItems">
+  <div>{{ newsItem?.title }}</div>
+  <div>{{ newsItem?.description }}</div>
+  <div>{{ newsItem?.date }}</div>
+</div>

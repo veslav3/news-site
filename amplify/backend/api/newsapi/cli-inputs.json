@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "paths": {
+    "/news": {
+      "name": "/news",
+      "lambdaFunction": "getnews",
+      "permissions": {
+        "setting": "protected",
+        "auth": [
+          "create",
+          "read"
+        ],
+        "guest": [
+          "read"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifye42c079ca4064-staging-212616-authRole",
+      "UnauthRoleArn": "arn:aws:iam::726238759338:role/amplify-amplifye42c079ca4064-staging-212616-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::726238759338:role/amplify-amplifye42c079ca4064-staging-212616-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-amplifye42c079ca4064-staging-212616-deployment",
+      "UnauthRoleName": "amplify-amplifye42c079ca4064-staging-212616-unauthRole",
+      "StackName": "amplify-amplifye42c079ca4064-staging-212616",
+      "StackId": "arn:aws:cloudformation:eu-west-1:726238759338:stack/amplify-amplifye42c079ca4064-staging-212616/f6745e40-6dd0-11ed-af72-0a7239a7ea31",
+      "AmplifyAppId": "d16845fox5qhm8",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-amplifye42c079ca4064-staging-212616-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "function": {
+        "getnews": {
+          "deploymentBucketName": "amplify-amplifye42c079ca4064-staging-212616-deployment",
+          "s3Key": "amplify-builds/getnews-702b744e457262507672-build.zip"
+        }
+      },
+      "auth": {
+        "newssite": {}
+      },
+      "storage": {
+        "news": {}
+      },
+      "api": {
+        "newsapi": {}
+      }
+    }
+  }
+}
