@@ -21,7 +21,7 @@ export class CreateNewsItemComponent {
 
   public onCreate(newsItem: NewsItem) {
     newsItem.date = new Date().toISOString();
-    API.post('newsapi', '/news', { body: newsItem })
+    API.post('newsapi', '/newsitem', { body: newsItem })
       .then(() => console.log)
       .catch(error => { console.log(error.response)});
   }

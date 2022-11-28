@@ -17,6 +17,10 @@
         "getnews": {
           "deploymentBucketName": "amplify-amplifye42c079ca4064-staging-212616-deployment",
           "s3Key": "amplify-builds/getnews-702b744e457262507672-build.zip"
+        },
+        "createnews": {
+          "deploymentBucketName": "amplify-amplifye42c079ca4064-staging-212616-deployment",
+          "s3Key": "amplify-builds/createnews-666b4f774a337644542f-build.zip"
         }
       },
       "auth": {
