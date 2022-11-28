@@ -78,7 +78,7 @@
       "dependsOn": [
         {
           "category": "function",
-          "resourceName": "getnews",
+          "resourceName": "createnews",
           "attributes": [
             "Name",
             "Arn"
@@ -86,7 +86,7 @@
         },
         {
           "category": "function",
-          "resourceName": "createnews",
+          "resourceName": "getnews",
           "attributes": [
             "Name",
             "Arn"

@@ -16,7 +16,7 @@
       "function": {
         "getnews": {
           "deploymentBucketName": "amplify-amplifye42c079ca4064-staging-212616-deployment",
-          "s3Key": "amplify-builds/getnews-702b744e457262507672-build.zip"
+          "s3Key": "amplify-builds/getnews-4355487966585a617668-build.zip"
         },
         "createnews": {
           "deploymentBucketName": "amplify-amplifye42c079ca4064-staging-212616-deployment",

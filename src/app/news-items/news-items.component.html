@@ -1,6 +1,13 @@
 <h1>Current news</h1>
-<div *ngFor="let newsItem of newsItems">
-  <div>{{ newsItem?.title }}</div>
-  <div>{{ newsItem?.description }}</div>
-  <div>{{ newsItem?.date }}</div>
-</div>
+<table>
+<tr>
+  <th>Title</th>
+  <th>Description</th>
+  <th>Publication date</th>
+</tr>
+<tr *ngFor="let newsItem of newsItems">
+  <td>{{ newsItem?.title }}</td>
+  <td>{{ newsItem?.description }}</td>
+  <td>{{ newsItem?.date | date }}</td>
+</tr>
+</table>

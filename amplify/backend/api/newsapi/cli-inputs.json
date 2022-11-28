@@ -1,20 +1,6 @@
 {
   "version": 1,
   "paths": {
-    "/news": {
-      "name": "/news",
-      "lambdaFunction": "getnews",
-      "permissions": {
-        "setting": "protected",
-        "auth": [
-          "create",
-          "read"
-        ],
-        "guest": [
-          "read"
-        ]
-      }
-    },
     "/newsitem": {
       "name": "/newsitem",
       "lambdaFunction": "createnews",
@@ -23,6 +9,22 @@
         "auth": [
           "create",
           "update"
+        ]
+      }
+    },
+    "/news": {
+      "name": "/news",
+      "lambdaFunction": "getnews",
+      "permissions": {
+        "setting": "protected",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ],
+        "guest": [
+          "read"
         ]
       }
     }
