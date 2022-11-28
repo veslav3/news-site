@@ -37,6 +37,24 @@
     "resourceName": "newssite",
     "sharedId": "8fcddd92",
     "serviceName": "Cognito",
-    "useDefault": "manual"
+    "useDefault": "default",
+    "authRoleArn": {
+      "Fn::GetAtt": [
+        "AuthRole",
+        "Arn"
+      ]
+    },
+    "unauthRoleArn": {
+      "Fn::GetAtt": [
+        "UnauthRole",
+        "Arn"
+      ]
+    },
+    "breakCircularDependency": true,
+    "useEnabledMfas": true,
+    "dependsOn": [],
+    "hostedUI": false,
+    "userPoolGroupList": [],
+    "authProviders": []
   }
-}   
+}
