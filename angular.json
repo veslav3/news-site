@@ -29,11 +29,7 @@
             ],
             "styles": [
               "src/styles.scss",
-              {
-                "input": "~@aws-amplify/ui-angular/theme.css",
-                "inject": false,
-                "bundleName": "amplify"
-              }
+              "@aws-amplify/ui/styles.css"
             ],
             "scripts": []
           },
@@ -43,7 +39,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumError": "2mb"
                 },
                 {
                   "type": "anyComponentStyle",
