@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {NewsItem} from "../news-items/news-item.interface";
 import {API} from "aws-amplify";
@@ -6,7 +6,7 @@ import {API} from "aws-amplify";
 @Component({
   selector: 'app-create-news-item',
   templateUrl: './create-news-item.component.html',
-  styleUrls: ['./create-news-item.component.css']
+  styleUrls: ['./create-news-item.component.scss']
 })
 export class CreateNewsItemComponent {
   public createForm: FormGroup;
@@ -20,7 +20,8 @@ export class CreateNewsItemComponent {
   }
 
   public onCreate(newsItem: NewsItem) {
-    API.put('newsapi', '/news', { body: newsItem, headers: {}})
+    newsItem.date = new Date().toISOString();
+    API.post('newsapi', '/news', { body: newsItem })
       .then(() => console.log)
       .catch(error => { console.log(error.response)});
   }
